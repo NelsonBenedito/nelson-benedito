@@ -28,7 +28,7 @@ export default function MagneticCard({ title, description, image, link, icon, in
   // Smooth springs for movement
   const springX = useSpring(x, { stiffness: 150, damping: 15 });
   const springY = useSpring(y, { stiffness: 150, damping: 15 });
-  
+
   // Content parallax (moves more than the container)
   const contentX = useTransform(springX, (val) => val * 1.5);
   const contentY = useTransform(springY, (val) => val * 1.5);
@@ -39,7 +39,7 @@ export default function MagneticCard({ title, description, image, link, icon, in
     const rect = cardRef.current.getBoundingClientRect();
     const centerX = rect.left + rect.width / 2;
     const centerY = rect.top + rect.height / 2;
-    
+
     // Relative position from center (-0.5 to 0.5 range approx)
     const relX = (e.clientX - centerX) / (rect.width / 2);
     const relY = (e.clientY - centerY) / (rect.height / 2);
@@ -90,7 +90,7 @@ export default function MagneticCard({ title, description, image, link, icon, in
       />
 
       {/* Content Container (Parallax) */}
-      <motion.div 
+      <motion.div
         className="relative z-10 flex h-full flex-col"
         style={{ x: contentX, y: contentY }}
       >
@@ -111,13 +111,13 @@ export default function MagneticCard({ title, description, image, link, icon, in
           <p className="mb-6 flex-1 text-sm text-[var(--text-dim)]">
             {description}
           </p>
-          <a 
-            href={link} 
-            target="_blank" 
+          <a
+            href={link}
+            target="_blank"
             rel="noopener noreferrer"
             className="project-link group inline-flex items-center gap-2 font-semibold text-[var(--accent)] transition-all hover:gap-3"
           >
-            Ver Projeto 
+            Ver Projeto
             <i className="ph-bold ph-arrow-up-right"></i>
           </a>
         </div>
