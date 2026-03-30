@@ -3,22 +3,22 @@
 @tailwind utilities;
 
 :root {
-  /* Color Palette */
-  --bg-dark: hsl(230, 20%, 8%);
-  --bg-darker: hsl(230, 25%, 5%);
-  --primary: hsl(263, 70%, 50%);
-  --primary-light: hsl(263, 80%, 65%);
-  --accent: hsl(180, 100%, 50%);
-  --text-main: hsl(0, 0%, 95%);
-  --text-dim: hsl(230, 10%, 70%);
-  --glass: rgba(255, 255, 255, 0.03);
-  --glass-border: rgba(255, 255, 255, 0.08);
+  /* Sober & Muted Color Palette */
+  --bg-dark: hsl(220, 10%, 10%);       /* Very deep charcoal gray */
+  --bg-darker: hsl(220, 12%, 7%);     /* Almost black */
+  --primary: hsl(220, 15%, 35%);      /* Muted steel gray */
+  --primary-light: hsl(220, 15%, 55%);/* Light steel gray */
+  --accent: hsl(215, 12%, 75%);       /* Muted sky gray */
+  --text-main: hsl(210, 10%, 95%);    /* Very soft off-white */
+  --text-dim: hsl(215, 10%, 60%);     /* Sober grayish-blue text */
+  --glass: rgba(255, 255, 255, 0.02);
+  --glass-border: rgba(255, 255, 255, 0.05);
   --glass-hover: rgba(255, 255, 255, 0.08);
 
   /* Spacing & Transitions */
   --spacing-lg: 4rem;
   --spacing-md: 2rem;
-  --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 * {
@@ -53,7 +53,7 @@ body {
   width: 500px;
   height: 500px;
   background: radial-gradient(circle, var(--primary), transparent);
-  opacity: 0.15;
+  opacity: 0.08; /* Reduced for a more sober look */
   border-radius: 50%;
   animation: move 20s infinite alternate;
 }
@@ -62,6 +62,7 @@ body {
   background: radial-gradient(circle, var(--accent), transparent);
   left: 60%;
   top: 20%;
+  opacity: 0.05; /* Even more subtle */
   animation-duration: 25s;
 }
 
@@ -80,6 +81,7 @@ h1, h2, h3 {
 .gradient-text {
   background: linear-gradient(135deg, var(--text-main) 0%, var(--primary-light) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -232,7 +234,7 @@ header {
   border: 1px solid var(--glass-border);
   border-radius: 20px;
   padding: 1.5rem;
-  transition: var(--transition);
+  transition: background 0.3s ease, border-color 0.3s ease;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -242,7 +244,6 @@ header {
 .project-card:hover {
   background: var(--glass-hover);
   border-color: var(--primary);
-  transform: translateY(-10px);
 }
 
 .project-img {
@@ -261,10 +262,7 @@ header {
   object-fit: cover;
   transition: var(--transition);
 }
-
-.project-card:hover .project-img img {
-  transform: scale(1.1);
-}
+/* Handled by MagneticCard component */
 
 .project-info h3 {
   font-size: 1.5rem;

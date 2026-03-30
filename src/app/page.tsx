@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Script from 'next/script';
+import MagneticCard from '@/components/MagneticCard';
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -136,30 +137,7 @@ export default function Home() {
 
           <div className="projects-grid">
             {projects.map((project, index) => (
-              <article
-                key={index}
-                className="project-card reveal-on-scroll opacity-0 translate-y-8 transition-all duration-700"
-                style={{ transitionDelay: `${index * 100}ms` }}
-              >
-                <div className="project-img">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-400"
-                  />
-                </div>
-                <div className="project-info">
-                  <h3>
-                    <i className={`ph-bold ${project.icon}`} style={{ color: 'var(--primary)', marginRight: '10px' }}></i>
-                    {project.title}
-                  </h3>
-                  <p>{project.description}</p>
-                  <a href={project.link} target="_blank" className="project-link">
-                    Ver Projeto <i className="ph-bold ph-arrow-up-right"></i>
-                  </a>
-                </div>
-              </article>
+              <MagneticCard key={index} {...project} index={index} />
             ))}
           </div>
         </section>
