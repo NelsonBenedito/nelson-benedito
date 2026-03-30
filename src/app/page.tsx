@@ -50,7 +50,7 @@ export default function Home() {
       title: "Cais Investimentos",
       description: "Uma landing page para a empresa Cais Investimentos. Desenvolvida com HTML, CSS e JavaScript.",
       image: "/project_cais.png",
-      link: "https://www.caisinvestimentos.com.br",
+      link: "https://cais-investimentos.vercel.app",
       icon: "ph-chart-line-up"
     },
     {
