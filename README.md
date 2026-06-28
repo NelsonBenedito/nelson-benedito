@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio Pessoal - Nelson Benedito 🚀
 
-## Getting Started
+Este repositório contém o código-fonte do meu portfólio pessoal. Um espaço projetado para apresentar minha trajetória, projetos desenvolvidos e minhas principais habilidades como desenvolvedor Front-end.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🙋‍♂️ Sobre Mim
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Olá! Sou **Nelson Benedito**, um desenvolvedor front-end apaixonado por criar interfaces web intuitivas e de alto desempenho. Dedico-me a construir experiências de usuário excepcionais, combinando design limpo, código estruturado e as melhores práticas de desenvolvimento.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tecnologias e Ferramentas
 
-## Learn More
+Para o desenvolvimento deste projeto e de minhas aplicações cotidianas, utilizo:
 
-To learn more about Next.js, take a look at the following resources:
+- **Linguagens:** HTML5, CSS3, JavaScript (ES6+), TypeScript
+- **Frameworks / Bibliotecas:** React.js / Next.js
+- **Estilização:** TailWind CSS / Styled Components
+- **Ferramentas:** Git, GitHub, VS Code
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Design & Visual
 
-## Deploy on Vercel
+O design do portfólio foi planejado com foco na modernidade e elegância:
+- **Tema Dark (Escuro):** Visual minimalista e confortável para leitura.
+- **Responsividade:** Totalmente adaptado para dispositivos móveis, tablets e desktops.
+- **Identidade Visual:** Bordas arredondadas e fluidas para imagens de perfil e cartões de projetos.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📂 Estrutura de Navegação
+
+O portfólio é dividido de forma simples e direta nas seguintes seções:
+1. **Início (Hero Section):** Apresentação inicial e links rápidos para redes sociais.
+2. **Sobre:** Detalhes sobre minha formação, paixão pelo desenvolvimento e competências.
+3. **Projetos:** Galeria de projetos principais com links para código e demonstrações ao vivo.
+4. **Contato:** Formulário ou canais diretos para conversarmos sobre novas oportunidades.
+
+---
+
+## 🌐 Conecte-se Comigo
+
+Sinta-se à vontade para entrar em contato através das minhas redes sociais oficiais incluídas no portfólio:
+
+- 🐙 [GitHub](https://github.com/NelsonBenedito)
+- 💼 [LinkedIn](https://linkedin.com) *(Adicione seu link real)*
+- 📸 [Instagram](https://instagram.com) *(Adicione seu link real)*
+- 💬 [WhatsApp](https://wa.me/) *(Adicione seu link real)*
+
+---
