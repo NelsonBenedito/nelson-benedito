@@ -41,13 +41,6 @@ export default function Home() {
 
   const projects = [
     {
-      title: "AskIt",
-      description: "Webapp responsivo que permite fazer e responder perguntas de forma rápida e intuitiva pelo navegador.",
-      image: "/project_askit.png",
-      link: "https://askit-5c462.web.app/",
-      icon: "ph-chat-circle-dots"
-    },
-    {
       title: "Cais Investimentos",
       description: "Uma landing page para a empresa Cais Investimentos. Desenvolvida com HTML, CSS e JavaScript.",
       image: "/project_cais.png",
@@ -67,6 +60,13 @@ export default function Home() {
       image: "/project1.png",
       link: "https://www.leadsextractor.com.br/",
       icon: "ph-shuffle"
+    },
+    {
+      title: "Escola Manjedoura",
+      description: "Assim como a manjedoura revelou ao mundo a realeza de um Rei, estamos aqui para ajudar você a descobrir e honrar o propósito para o qual nasceu.",
+      image: "/EscolaManjedouraPrint.webp",
+      link: "https://escola-manjedoura.vercel.app/",
+      icon: "ph-graduation-cap"
     }
   ];
 
@@ -117,7 +117,7 @@ export default function Home() {
           <div className="hero-img">
             <div className="hero-img-wrapper">
               <Image
-                src="/NelsonBenedito.png"
+                src="/NelsonBenedito.webp"
                 alt="Nelson Benedito Portrait"
                 width={400}
                 height={400}
