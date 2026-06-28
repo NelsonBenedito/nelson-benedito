@@ -2,6 +2,8 @@
 
 Este repositório contém o código-fonte do meu portfólio pessoal. Um espaço projetado para apresentar minha trajetória, projetos desenvolvidos e minhas principais habilidades como desenvolvedor Front-end.
 
+<img width="1575" height="730" alt="image" src="https://github.com/user-attachments/assets/f399b4e1-5d59-4231-bf08-029c6d268497" />
+
 ---
 
 ## 🙋‍♂️ Sobre Mim
